@@ -1,8 +1,9 @@
 // main.rs
 
-use computer::QuantumComputer;
-use algorithms::deutsch;
-use gates;
+extern crate quantum2;
+use quantum2::computer::QuantumComputer;
+use quantum2::algorithms::deutsch;
+use quantum2::gates;
 
 fn main() {
     // Let's do something simple of a 3-qubit system.
@@ -31,4 +32,8 @@ fn main() {
     c3.collapse();
     let result = if 1 == c3.value() { "constant" } else { "balanced" };
     println!("f is: {}", result);
+}
+
+fn f(x: i32) -> i32 {
+    1 - x
 }
