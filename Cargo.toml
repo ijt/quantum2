@@ -6,7 +6,7 @@ repository = "https://github.com/ijt/quantum2.git"
 homepage = "https://github.com/ijt/quantum2/"
 license = "MIT"
 readme = "README.md"
-documentation = "http://beneills.github.io/quantum/"
+documentation = "https://docs.rs/quantum2"
 description = "Advanced Rust quantum computer simulator, forked from \"quantum\"."
 
 [features]
